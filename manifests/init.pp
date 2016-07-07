@@ -96,7 +96,7 @@ class chromedriver (
       recurse => true,
     }
   } else {
-    include ::unzip
+    include ::zip
 
     archive { $archive:
       ensure        => present,
@@ -106,7 +106,7 @@ class chromedriver (
       target        => $archive_dir,
       root_dir      => 'chromedriver',
       url           => $url,
-      require       => Class['::unzip'],
+      require       => Class['::zip'],
     } ->
 
     file { $target_file:
