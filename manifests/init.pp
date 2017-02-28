@@ -54,10 +54,10 @@ class chromedriver (
     default  => 32,
   }
 
-  $latest_version = '2.11'
+  $latest_version = '2.24'
   $latest_md5 = {
-    "32" => "bf0d731cd34fd07e22f4641c9aec8483",
-    "64" => "7a7336caea140f6ac1cb8fae8df50d36",
+    "32" => "8e6b6d358f1b919a0d1369f90d61e1a4",
+    "64" => "c56e41bdc769ad2c31225b8495fc1a93",
   }
 
   $version = $ensure ? {
